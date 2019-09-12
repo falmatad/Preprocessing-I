@@ -167,6 +167,9 @@ header .nav-bar nav a {
   font-family: 'Acme', sans-serif;
   text-decoration: none;
 }
+header .nav-bar nav a:hover {
+  color: white;
+}
 header .nav-bar .tittle-container {
   display: flex;
   flex-direction: column;
