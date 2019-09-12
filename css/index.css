@@ -179,6 +179,12 @@ header .nav-bar .tittle-container h1 {
   font-size: 3rem;
   margin-bottom: 2%;
 }
+@media (max-width: 500px) {
+  header .nav-bar .tittle-container h1 {
+    text-align: center;
+    line-height: 100%;
+  }
+}
 header .nav-bar .tittle-container h2 {
   color: cyan;
   font-family: 'Raleway', sans-serif;
@@ -197,6 +203,11 @@ header .logo-container {
   max-width: 50%;
   overflow: hidden;
 }
+@media (max-width: 500px) {
+  header .logo-container {
+    visibility: hidden;
+  }
+}
 #main-top {
   display: flex;
   border-bottom: 2px solid black;
@@ -204,6 +215,11 @@ header .logo-container {
 #main-top .contact {
   border-left: 2px solid black;
   padding-left: 3%;
+}
+@media (max-width: 500px) {
+  #main-top .contact {
+    padding: 1%;
+  }
 }
 #main-top .contact h2 {
   color: cyan;
@@ -223,6 +239,11 @@ header .logo-container {
 }
 #main-top .about {
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  #main-top .about {
+    padding: 1%;
+  }
 }
 #main-top .about h2 {
   color: cyan;
@@ -251,6 +272,11 @@ header .logo-container {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+}
+@media (max-width: 500px) {
+  #main-middle .company-name {
+    font-size: 80%;
+  }
 }
 #main-middle .company-name h2 {
   color: cyan;
@@ -283,6 +309,11 @@ header .logo-container {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 5%;
+}
+@media (max-width: 500px) {
+  #main-middle .exp-detail {
+    font-size: 80%;
+  }
 }
 #main-middle .exp-detail h2 {
   color: cyan;
