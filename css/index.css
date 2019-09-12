@@ -129,8 +129,19 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  border: 1px solid blue;
 }
 html,
 body {
   height: 100%;
+  background-image: linear-gradient(#A89DC8, #C79CC9, #EFA8B0);
+}
+#header nav {
+  display: flex;
+}
+#header nav .logo-container {
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
 }
