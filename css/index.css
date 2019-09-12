@@ -1,1 +1,359 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  padding: 2%;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.separate {
+  display: flex;
+  justify-content: space-around;
+  line-height: 165%;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+header .nav-bar {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  height: 40vh;
+  width: 70vw;
+}
+header .nav-bar nav {
+  display: flex;
+  justify-content: space-between;
+}
+header .nav-bar nav a {
+  color: lightblue;
+  font-family: 'Acme', sans-serif;
+  text-decoration: none;
+}
+header .nav-bar .tittle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 150%;
+}
+header .nav-bar .tittle-container h1 {
+  color: Black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  header .nav-bar .tittle-container h1 {
+    text-align: center;
+    line-height: 100%;
+  }
+}
+header .nav-bar .tittle-container h2 {
+  color: cyan;
+  font-family: 'Raleway', sans-serif;
+}
+header .nav-bar .tittle-container h3 {
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+}
+header .nav-bar .tittle-container h4 {
+  color: black;
+  font-family: 'Exo', sans-serif;
+}
+header .logo-container {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 50%;
+  overflow: hidden;
+}
+@media (max-width: 500px) {
+  header .logo-container {
+    visibility: hidden;
+  }
+}
+#main-top {
+  display: flex;
+  border-bottom: 2px solid black;
+}
+#main-top .contact {
+  border-left: 2px solid black;
+  padding-left: 3%;
+}
+@media (max-width: 500px) {
+  #main-top .contact {
+    padding: 1%;
+  }
+}
+#main-top .contact h2 {
+  color: cyan;
+  font-family: 'Raleway', sans-serif;
+}
+#main-top .contact h3 {
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#main-top .contact h4 {
+  color: black;
+  font-family: 'Exo', sans-serif;
+}
+#main-top .contact p {
+  color: lightgray;
+  font-family: 'Raleway', sans-serif;
+}
+#main-top .about {
+  padding-left: 1%;
+}
+@media (max-width: 500px) {
+  #main-top .about {
+    padding: 1%;
+  }
+}
+#main-top .about h2 {
+  color: cyan;
+  font-family: 'Raleway', sans-serif;
+}
+#main-top .about h3 {
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#main-top .about h4 {
+  color: black;
+  font-family: 'Exo', sans-serif;
+}
+#main-top .about p {
+  color: lightgray;
+  font-family: 'Raleway', sans-serif;
+}
+#main-middle {
+  display: flex;
+  height: 80%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+#main-middle .company-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  #main-middle .company-name {
+    font-size: 80%;
+  }
+}
+#main-middle .company-name h2 {
+  color: cyan;
+  font-family: 'Raleway', sans-serif;
+}
+#main-middle .company-name h3 {
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#main-middle .company-name h4 {
+  color: black;
+  font-family: 'Exo', sans-serif;
+}
+#main-middle .company-name p {
+  color: lightgray;
+  font-family: 'Raleway', sans-serif;
+}
+#main-middle .vr {
+  width: 3px;
+  background-color: #000;
+  top: 0;
+  bottom: 0;
+  left: 150px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 4.48%;
+}
+#main-middle .exp-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+@media (max-width: 500px) {
+  #main-middle .exp-detail {
+    font-size: 80%;
+  }
+}
+#main-middle .exp-detail h2 {
+  color: cyan;
+  font-family: 'Raleway', sans-serif;
+}
+#main-middle .exp-detail h3 {
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#main-middle .exp-detail h4 {
+  color: black;
+  font-family: 'Exo', sans-serif;
+}
+#main-middle .exp-detail p {
+  color: lightgray;
+  font-family: 'Raleway', sans-serif;
+}
+#bottom-main {
+  display: flex;
+  justify-content: space-around;
+  line-height: 165%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 2%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+#bottom-main h2 {
+  color: cyan;
+  font-family: 'Raleway', sans-serif;
+}
+#bottom-main h3 {
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#bottom-main h4 {
+  color: black;
+  font-family: 'Exo', sans-serif;
+}
+#bottom-main p {
+  color: lightgray;
+  font-family: 'Raleway', sans-serif;
+}
